@@ -11,6 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Netlify Forms: hidden forms for SPA detection -->
+    <form name="cfo-ai-lead" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="cfo-ai-lead" />
+      <input type="hidden" name="programme" value="AI for CFOs" />
+    </form>
+    <form name="info-session-lead" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="info-session-lead" />
+      <input type="hidden" name="programme" value="AI for CFOs" />
+      <input type="hidden" name="source" value="info_session" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -87,6 +87,24 @@ netlify deploy --prod
 
 - **Instructor:** Vikram Singh Sankhala
 - **Instructor photo:** `public/instructor-photo.png` displays on the Instructor page
+- **WhatsApp number:** Update `src/config/leads.js` with your actual number (e.g. `919876543210`)
+
+## Lead Capture
+
+The site includes 4 entry points for lead generation:
+
+1. **Primary CTA:** "Get CFO AI Playbook" / "Get Detailed Curriculum & Fees" → `/get-playbook` (gated form)
+2. **Secondary CTA:** "Join Info Session (Free)" → `/info-session` (webinar/Zoom registration)
+3. **WhatsApp CTA:** "Chat on WhatsApp with Programme Advisor" (click-to-chat) in hero, footer, and sidebar
+4. **Header CTA:** "Get Playbook" in the main navigation
+
+Forms use **Netlify Forms**. To connect to Google Sheets:
+
+1. Deploy to Netlify
+2. In Netlify: Forms → select form → Add notification → Outgoing webhook (Zapier/Make)
+3. Or use Zapier: Trigger "New Form Submission in Netlify" → Action "Google Sheets: Create Row"
+
+Lead scoring logic is in `netlify/functions/lead-scoring.js` (Role + Company Size + Goal). Configure as a form webhook if needed.
 - **Duration:** 40 contact hours (5-day bootcamp)
 - **Target:** CFOs, Finance Directors, Controllers, FP&A Leaders
 - **Date:** February 17, 2026

@@ -143,6 +143,17 @@ a:hover {
   background: rgba(56, 189, 248, 0.15);
 }
 
+.nav-link.nav-cta {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-bg);
+  font-weight: 600;
+}
+
+.nav-link.nav-cta:hover {
+  opacity: 0.9;
+  color: var(--color-bg);
+}
+
 .mobile-menu-btn {
   display: none;
 }
@@ -158,6 +169,17 @@ a:hover {
   text-align: center;
   color: var(--color-text-muted);
   font-size: 0.9rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-whatsapp {
+  margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {
@@ -214,6 +236,23 @@ a:hover {
   background: rgba(56, 189, 248, 0.1);
   text-decoration: none;
   color: var(--color-primary);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #20bd5a;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
 }
 
 /* Home / Hero */
@@ -1255,6 +1294,112 @@ a:hover {
 .appendix-footer {
   text-align: center;
   padding: 20px;
+}
+
+/* Lead capture */
+.lead-capture-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .lead-capture-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lead-form-card {
+  max-width: 520px;
+}
+
+.lead-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.lead-form .form-row:last-of-type {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .lead-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lead-form input,
+.lead-form select {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.lead-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.lead-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.lead-form .hidden {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lead-sidebar h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.lead-sidebar .btn {
+  margin-bottom: 8px;
+}
+
+.lead-sidebar .small {
+  font-size: 0.85rem;
+  margin: 0 0 20px;
+}
+
+.lead-divider {
+  border: none;
+  border-top: 1px solid rgba(56, 189, 248, 0.15);
+  margin: 24px 0;
+}
+
+.lead-success-card {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lead-success-text {
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+}
+
+.lead-success-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
 }
 
 @media (max-width: 768px) {

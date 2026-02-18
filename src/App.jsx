@@ -10,6 +10,8 @@ import QuestionBank from './pages/QuestionBank'
 import Instructor from './pages/Instructor'
 import Governance from './pages/Governance'
 import Appendix from './pages/Appendix'
+import LeadCapture from './pages/LeadCapture'
+import InfoSession from './pages/InfoSession'
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/instructor" element={<Instructor />} />
         <Route path="/governance" element={<Governance />} />
         <Route path="/appendix" element={<Appendix />} />
+        <Route path="/get-playbook" element={<LeadCapture />} />
+        <Route path="/info-session" element={<InfoSession />} />
       </Routes>
     </Layout>
   )

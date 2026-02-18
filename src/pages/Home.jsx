@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { WHATSAPP_NUMBER, WHATSAPP_PLAYBOOK_MSG } from '../config/leads'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts'
 
 const moduleData = [
@@ -37,8 +38,16 @@ export default function Home() {
             <span>Instructor: Vikram Singh Sankhala</span>
           </div>
           <div className="hero-cta">
-            <Link to="/overview" className="btn btn-primary">Explore Course</Link>
-            <Link to="/schedule" className="btn btn-secondary">View Schedule</Link>
+            <Link to="/get-playbook" className="btn btn-primary">Get CFO AI Playbook</Link>
+            <Link to="/info-session" className="btn btn-secondary">Join Info Session (Free)</Link>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PLAYBOOK_MSG)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -134,9 +143,16 @@ export default function Home() {
             No prior AI/ML experience required. Focus on strategic implementation and operational deployment.
           </p>
           <div className="cta-buttons">
-            <Link to="/modules" className="btn btn-primary">View Modules</Link>
-            <Link to="/capstone" className="btn btn-secondary">Capstone Project</Link>
-            <Link to="/resources" className="btn btn-secondary">Resources</Link>
+            <Link to="/get-playbook" className="btn btn-primary">Get Detailed Curriculum & Fees</Link>
+            <Link to="/info-session" className="btn btn-secondary">Join Next Batch Info Session</Link>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PLAYBOOK_MSG)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
       </section>

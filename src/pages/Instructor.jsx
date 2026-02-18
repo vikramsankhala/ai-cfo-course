@@ -5,16 +5,38 @@ export default function Instructor() {
         <div className="container">
           <h1 className="section-title">Instructor</h1>
 
-          <div className="card instructor-card">
+          <div className="card instructor-card about-instructor">
+            <h2>About the Instructor</h2>
             <div className="instructor-header">
-              <div className="instructor-avatar">VS</div>
-              <div>
+              <div className="instructor-photo-wrap">
+                <img
+                  src="/instructor-photo.png"
+                  alt="Vikram Singh Sankhala"
+                  className="instructor-photo"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling?.classList?.add('show')
+                  }}
+                />
+                <div className="instructor-avatar fallback">VS</div>
+              </div>
+              <div className="instructor-info">
                 <h2>Vikram Singh Sankhala</h2>
+                <p className="instructor-credentials">IIT · IIM · Ex IRS · FRM · Fin.Engr</p>
                 <p className="instructor-title">Course Instructor</p>
+                <div className="instructor-links">
+                  <a href="https://www.goodreads.com/author/list/36475998.vikram_sankhala" target="_blank" rel="noopener noreferrer" className="instructor-link">
+                    Goodreads
+                  </a>
+                  <span className="link-sep">·</span>
+                  <a href="https://www.slideshare.net/vikramsankhala" target="_blank" rel="noopener noreferrer" className="instructor-link">
+                    SlideShare
+                  </a>
+                </div>
               </div>
             </div>
             <div className="instructor-bio">
-              <p>Technical founder with expertise in AI/ML, quantum computing, software architecture, and finance technology.</p>
+              <p>Technical founder with expertise in AI/ML, quantum computing, software architecture, and finance technology. Author of educational works on Natural Language Processing, Big Data, Applied Analytics, and Python programming.</p>
             </div>
             <h3>Experience</h3>
             <ul>
@@ -24,6 +46,29 @@ export default function Instructor() {
               <li>Deep technical expertise in Python, ML frameworks, cloud platforms</li>
               <li>Strong business acumen: fundraising, product design, startup strategy</li>
               <li>Educational content creator with focus on practical, hands-on learning</li>
+            </ul>
+
+            <h3>Published Works</h3>
+            <p className="muted">Author of lecture notes and educational materials on data science, analytics, and technology. View full bibliography on <a href="https://www.goodreads.com/author/list/36475998.vikram_sankhala" target="_blank" rel="noopener noreferrer">Goodreads</a>.</p>
+            <ul className="published-works">
+              <li>Natural Language Processing: Lecture Notes</li>
+              <li>Big Data: Lecture Notes</li>
+              <li>Applied Analytics: Lecture Slides</li>
+              <li>Sales Analytics & Customer Analytics: Lecture Slides</li>
+              <li>Python Step by Step (Levels 1–3)</li>
+              <li>Data Science Step by Step</li>
+              <li>IoT for Managers: Lecture Notes</li>
+            </ul>
+
+            <h3>Presentations & Talks</h3>
+            <p className="muted">65+ presentations on finance, technology, and analytics. Explore on <a href="https://www.slideshare.net/vikramsankhala" target="_blank" rel="noopener noreferrer">SlideShare</a>.</p>
+            <ul>
+              <li>Primer on major data mining algorithms</li>
+              <li>Blockchain concept explained</li>
+              <li>Transfer pricing & tax issues in M&A</li>
+              <li>An Introduction to Risk</li>
+              <li>Asset Liability Management</li>
+              <li>GST simplified</li>
             </ul>
           </div>
 

@@ -86,6 +86,7 @@ netlify deploy --prod
 ## Course Information
 
 - **Instructor:** Vikram Singh Sankhala
+- **Instructor photo:** `public/instructor-photo.png` displays on the Instructor page
 - **Duration:** 40 contact hours (5-day bootcamp)
 - **Target:** CFOs, Finance Directors, Controllers, FP&A Leaders
 - **Date:** February 17, 2026

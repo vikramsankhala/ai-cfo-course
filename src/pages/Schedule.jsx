@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ComposedChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line } from 'recharts'
 
 const daySchedule = [
@@ -71,6 +72,12 @@ export default function Schedule() {
       <section className="section">
         <div className="container">
           <h1 className="section-title">5-Day Course Schedule</h1>
+          <p className="muted" style={{ marginBottom: 24 }}>
+            High-level overview. For the detailed 10-minute-by-10-minute schedule, see{' '}
+            <Link to="/appendix" className="btn btn-secondary" style={{ display: 'inline-block', padding: '8px 16px' }}>
+              Appendix A: Daily Schedules
+            </Link>
+          </p>
           
           <div className="card overview-card" style={{ marginBottom: 32 }}>
             <h3>Daily Schedule Overview</h3>

@@ -9,6 +9,7 @@ import Resources from './pages/Resources'
 import QuestionBank from './pages/QuestionBank'
 import Instructor from './pages/Instructor'
 import Governance from './pages/Governance'
+import Appendix from './pages/Appendix'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/question-bank" element={<QuestionBank />} />
         <Route path="/instructor" element={<Instructor />} />
         <Route path="/governance" element={<Governance />} />
+        <Route path="/appendix" element={<Appendix />} />
       </Routes>
     </Layout>
   )

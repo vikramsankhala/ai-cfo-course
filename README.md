@@ -93,7 +93,7 @@ netlify deploy --prod
 
 The site includes 4 entry points for lead generation:
 
-1. **Primary CTA:** "Get CFO AI Playbook" / "Get Detailed Curriculum & Fees" → `/get-playbook` (gated form)
+1. **Primary CTA:** "Get CFO AI Playbook" / "Get Detailed Curriculum & Fees" → `/get-playbook` (gated form). After form submission, users get a direct download link to `public/cfo-ai-playbook.html` (12-section, 25+ page playbook; users can Print to PDF)
 2. **Secondary CTA:** "Join Info Session (Free)" → `/info-session` (webinar/Zoom registration)
 3. **WhatsApp CTA:** "Chat on WhatsApp with Programme Advisor" (click-to-chat) in hero, footer, and sidebar
 4. **Header CTA:** "Get Playbook" in the main navigation

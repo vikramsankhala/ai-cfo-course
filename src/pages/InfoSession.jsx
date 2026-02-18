@@ -69,7 +69,7 @@ export default function InfoSession() {
             Free webinar or group Zoom. No commitment—learn about the programme, ask questions, and meet the instructor.
           </p>
 
-          <div className="lead-capture-grid" style={{ maxWidth: 520 }}>
+          <div className="lead-capture-grid lead-form-wide">
             <div className="card lead-form-card">
               <form
                 name="info-session-lead"

@@ -40,15 +40,26 @@ export default function LeadCapture() {
             <div className="card lead-success-card">
               <h1 className="section-title">Thank You!</h1>
               <p className="lead-success-text">
-                Your request has been received. We'll send the <strong>CFO AI Playbook</strong> and detailed curriculum to your email shortly.
+                Your request has been received. Download your <strong>CFO AI Playbook</strong> now.
               </p>
-              <p className="muted">A programme advisor will reach out within 24 hours.</p>
+              <a
+                href="/cfo-ai-playbook.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+                download
+              >
+                Download CFO AI Playbook
+              </a>
+              <p className="muted" style={{ marginTop: 16 }}>
+                A programme advisor will reach out within 24 hours with the detailed curriculum and fees.
+              </p>
               <div className="lead-success-actions">
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PLAYBOOK_MSG)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
+                  className="btn btn-whatsapp"
                 >
                   Chat on WhatsApp
                 </a>

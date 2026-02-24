@@ -6,6 +6,7 @@ const navItems = [
   { path: '/overview', label: 'Overview' },
   { path: '/modules', label: 'Modules' },
   { path: '/schedule', label: 'Schedule' },
+  { path: '/transforming-finance', label: 'Transforming Finance' },
   { path: '/appendix', label: 'Appendix' },
   { path: '/capstone', label: 'Capstone' },
   { path: '/resources', label: 'Resources' },

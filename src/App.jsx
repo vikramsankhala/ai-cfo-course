@@ -12,6 +12,7 @@ import Governance from './pages/Governance'
 import Appendix from './pages/Appendix'
 import LeadCapture from './pages/LeadCapture'
 import InfoSession from './pages/InfoSession'
+import TransformingFinance from './pages/TransformingFinance'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/appendix" element={<Appendix />} />
         <Route path="/get-playbook" element={<LeadCapture />} />
         <Route path="/info-session" element={<InfoSession />} />
+        <Route path="/transforming-finance" element={<TransformingFinance />} />
       </Routes>
     </Layout>
   )

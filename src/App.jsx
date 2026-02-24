@@ -13,6 +13,7 @@ import Appendix from './pages/Appendix'
 import LeadCapture from './pages/LeadCapture'
 import InfoSession from './pages/InfoSession'
 import TransformingFinance from './pages/TransformingFinance'
+import FlyerDownload from './pages/FlyerDownload'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/get-playbook" element={<LeadCapture />} />
         <Route path="/info-session" element={<InfoSession />} />
         <Route path="/transforming-finance" element={<TransformingFinance />} />
+        <Route path="/get-flyer" element={<FlyerDownload />} />
       </Routes>
     </Layout>
   )

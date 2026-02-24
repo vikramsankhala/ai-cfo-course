@@ -145,7 +145,8 @@ export default function Home() {
           <div className="cta-buttons">
             <Link to="/get-playbook" className="btn btn-primary">Get Detailed Curriculum & Fees</Link>
             <Link to="/info-session" className="btn btn-secondary">Join Next Batch Info Session</Link>
-            <Link to="/transforming-finance" className="btn btn-secondary">Transforming Finance (21-Hour Programme)</Link>
+            <Link to="/transforming-finance" className="btn btn-secondary">Transforming Finance (21-Hour)</Link>
+            <Link to="/get-flyer" className="btn btn-secondary">Download Flyer</Link>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PLAYBOOK_MSG)}`}
               target="_blank"

@@ -1319,6 +1319,30 @@ a:hover {
   font-weight: 500;
 }
 
+.tf-flyer-cta {
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.tf-flyer-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.tf-flyer-cta h3 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+}
+
+.tf-flyer-cta .muted {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .tf-hero {
   margin-bottom: 32px;
 }

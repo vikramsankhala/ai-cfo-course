@@ -105,6 +105,8 @@ Forms use **Netlify Forms**. To connect to Google Sheets:
 3. Or use Zapier: Trigger "New Form Submission in Netlify" → Action "Google Sheets: Create Row"
 
 Lead scoring logic is in `netlify/functions/lead-scoring.js` (Role + Company Size + Goal). Configure as a form webhook if needed.
+
+**Viewing leads:** After deploy, go to Netlify Dashboard → Your Site → Forms. Each form (cfo-ai-lead, info-session-lead, flyer-lead) shows submissions. Export to CSV or connect Zapier/Make to push to Google Sheets for a downloadable lead list.
 - **Duration:** 40 contact hours (5-day bootcamp)
 - **Target:** CFOs, Finance Directors, Controllers, FP&A Leaders
 - **Date:** February 17, 2026

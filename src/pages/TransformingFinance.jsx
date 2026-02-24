@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   PieChart,
   Pie,
@@ -78,6 +79,18 @@ export default function TransformingFinance() {
             {programmeMeta.topics.map((t, i) => (
               <span key={i} className="topic-pill">{t}</span>
             ))}
+          </div>
+
+          <div className="card overview-card tf-flyer-cta">
+            <div className="tf-flyer-cta-inner">
+              <div>
+                <h3>Download the Programme Flyer</h3>
+                <p className="muted">Get the Transforming Finance with AI flyer (PDF) with full programme details.</p>
+              </div>
+              <Link to="/get-flyer" className="btn btn-primary">
+                Get Flyer
+              </Link>
+            </div>
           </div>
 
           <div className="card overview-card tf-hero">
